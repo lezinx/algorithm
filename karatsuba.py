@@ -6,6 +6,7 @@ def toEven(x):
 
 
 def karatsuba(x, y):
+    """The Karatsuba multiplication algorithm."""
     rozryad_X = int(len(x)/2);
     rozryad_Y = int(len(y)/2);
     if len(str(x)) and len(str(y)) == 1:
