@@ -2,7 +2,7 @@ def toEven(x):
     if x % 2 == 0:
         return x;
     else:
-        return x + 1
+        return x + 1;
 
 
 def karatsuba(x, y):
@@ -15,8 +15,8 @@ def karatsuba(x, y):
     c = int(y[:rozryad_Y]);
     b = int(x[rozryad_X:]);
     d = int(y[rozryad_Y:]);
-    ac = karatsuba(str(a), str(c));
-    bd = karatsuba(str(b), str(d));
+    ac = a*c;
+    bd = b*d;
     AplusB = str(a + b);
     CplusD = str(c + d);
     if len(AplusB) != len(CplusD):
@@ -32,7 +32,9 @@ def main():
     y = input("y = ");
     padding = max(toEven(len(str(x))), toEven(len(str(y))));
     print("x*y = ",karatsuba(x.zfill(padding),y.zfill(padding)));
+    main();
+
 
 
 if __name__ == "__main__":
-    main()
+    main();

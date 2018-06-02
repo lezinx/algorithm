@@ -1,0 +1,5 @@
+3 23 samsung done
+1 12 lg undone
+2 23 toshiba done
+4 9 samsung undone
+5 30 sony   undone Yakovenko
